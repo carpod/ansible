@@ -1,0 +1,9 @@
+- name: Install python-psutil package
+  apt: name=python-psutil
+
+- name: Copy wallpaper file
+  copy: src=files/Earth-Horizon.jpg dest=/home/cp/.Earth-Horizon.jpg owner=cp group=cp mode=600
+
+- name: Set GNOME Wallpaper
+  become_user: cp
+  dconf: key="/org/gnome/desktop/background/picture-uri" value="'file:///home/cp/.Earth-Horizon.jpg'"
