@@ -7,3 +7,10 @@
 - name: Set GNOME Wallpaper
   become_user: cp
   dconf: key="/org/gnome/desktop/background/picture-uri" value="'file:///home/cp/.Earth-Horizon.jpg'"
+
+- name: Copy lockscreenfile
+  copy: src=files/customized-ubuntu-lock-screen-1280x720.jpg dest=/home/cp/.customized-ubuntu-lock-screen-1280x720.jpg owner=cp group=cp mode=600
+
+- name: Set lock screen background
+  become_user: cp
+  dconf: key="/org/gnome/desktop/screensaver/picture-uri" value="'file:///home/cp/.customized-ubuntu-lock-screen-1280x720.jpg'"
