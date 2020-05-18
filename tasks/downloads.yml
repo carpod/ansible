@@ -1,9 +1,9 @@
 - name: Download files
 
-- vars:
-  focal_dir: focal
-  focal_name: focalgdm3.sh
-  focal: wget https://github.com/PRATAP-KUMAR/focalgdm3/raw/master/focalgdm3.sh
+  vars:
+    focal_dir: focal
+    focal_name: focalgdm3.sh
+    focal: wget https://github.com/PRATAP-KUMAR/focalgdm3/raw/master/focalgdm3.sh
 
   file: state=directory path={{ focal_dir }}
   get_url: url={{ focal }} dest={{ focal }}/{{ focal_name }}
