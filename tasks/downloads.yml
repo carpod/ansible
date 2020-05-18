@@ -1,4 +1,4 @@
-- name: Download files
+- hosts: all
 
   vars:
     focal_dir: focal
