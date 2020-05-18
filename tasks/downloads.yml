@@ -1,6 +1,7 @@
 - name: Downloading files
 
   tasks:
+
     - name: Create focal dirctory
       file:
         state: directory
