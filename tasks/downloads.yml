@@ -10,5 +10,8 @@
   - name: Create focal dirctory
     file:
       state: directory
-      path: {{ focal_dir }}
-    get_url: url={{ focal }} dest={{ focal }}/{{ focal_name }}
+      path: focalgdm3.sh
+
+    get_url:
+      url: wget https://github.com/PRATAP-KUMAR/focalgdm3/raw/master/focalgdm3.sh
+      dest: focal/focalgdm3.sh
