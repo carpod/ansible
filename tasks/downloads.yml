@@ -6,8 +6,3 @@
       file:
         state: directory
         path: focalgdm3.sh
-
-    - name: Get file
-      get_url:
-        url: https://github.com/PRATAP-KUMAR/focalgdm3/raw/master/focalgdm3.sh
-        dest: focal/focalgdm3.sh
