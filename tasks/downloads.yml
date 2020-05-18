@@ -9,6 +9,4 @@
 
   - name: Create focal dirctory
     file: state=directory path={{ focal_dir }}
-
-  - name: Download focal
     get_url: url={{ focal }} dest={{ focal }}/{{ focal_name }}
