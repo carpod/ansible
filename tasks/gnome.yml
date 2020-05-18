@@ -1,5 +1,5 @@
 - name: Install python-psutil package
-  apt: name=python-psutil
+  -pip: name=psutil
 
 - name: Copy wallpaper file
   copy: src=files/Earth-Horizon.jpg dest=/home/cp/.Earth-Horizon.jpg owner=cp group=cp mode=600
