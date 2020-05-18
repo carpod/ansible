@@ -5,7 +5,7 @@
     focal_name: focalgdm3.sh
     focal: wget https://github.com/PRATAP-KUMAR/focalgdm3/raw/master/focalgdm3.sh
 
-  - name: Create focal dirctory
+    name: Create focal dirctory
     file:
       state: directory
       path: focalgdm3.sh
